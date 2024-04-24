@@ -1,0 +1,20 @@
+{# templates/viaje/mostrar.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles de Viaje</title>
+</head>
+<body>
+    <h1>Detalles de Viaje</h1>
+    <p>Origen: {{ viaje.getOrigen() }}</p>
+    <p>Destino: {{ viaje.getDestino() }}</p>
+    <p>Alojamiento: {{ viaje.getAlojamiento() }}</p>
+    <p>Actividades:</p>
+    <ul>
+        {% for actividad in viaje.getActividades() %}
+            <li>{{ actividad }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
