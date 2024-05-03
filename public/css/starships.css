@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+     font-family: sans-serif;
+     margin: 20px;
+    }
+    
+    h1 {
+     text-align: center;
+     margin-bottom: 20px;
+    }
+    
+    #starships-list {
+     list-style: none;
+    padding: 0;
+    }
+    
+    #starships-list li {
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     padding: 10px;
+    }

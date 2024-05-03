@@ -1,0 +1,15 @@
+{# templates/estudiante/mostrar.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles de Estudiante</title>
+     <link rel="stylesheet" href="{{ asset('css/estudiante.css') }}">
+</head>
+<body>
+    <h1>Detalles de Estudiante</h1>
+    <p>Nombre: {{ estudiante.getNombre() }}</p>
+    <p>Apellido: {{ estudiante.getApellido() }}</p>
+    <p>CI: {{ estudiante.getCi() }}</p>
+    <p>Carrera: {{ estudiante.getCarrera() }}</p>
+</body>
+</html>

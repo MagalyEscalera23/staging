@@ -1,0 +1,18 @@
+{# templates/menu/index.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menú</title>
+    <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
+</head>
+<body>
+    <h1>Menú de Navegación</h1>
+    <nav>
+        <ul>
+            {% for menuItem in menuItems %}
+                <li><a href="{{ menuItem.url }}">{{ menuItem.text }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</body>
+</html>
